@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;900;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+
+
+body{
+    background-image: linear-gradient(40deg, rgb(177, 188, 255), rgb(231, 245, 255));
+}
+
+header{
+    margin: 30px;
+    font-size: 27px;
+}
+.navbar-brand{
+    position: relative;
+    padding: 1px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 900;
+    font-size: 30px;
+    font-style: normal;
+    margin-left: -10px;
+}
+#stone{
+    position: absolute;
+    top: 50px;
+    left: 210px;
+}
+.navbar-toggler{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.navbar{
+    z-index: 1;
+}
+
+.dynamic-nav ul li a{
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+    color: rgb(3, 9, 9);
+    border-radius: 10px;
+    font-weight: 500;
+    margin: 10px;
+    background: linear-gradient(to right, rgba(41, 46, 73,0.2), rgba(83, 105, 118,0.2), rgba(187, 210, 197,0.2));
+}
+.dynamic-nav ul li a:hover{
+    background-color: rgb(247, 128, 128);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+#section-1 {
+    min-height: 100vh;
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:inherit;
+    z-index: 2;
+}
+.dynamic-text{
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 150.5vh;
+    background: #BBD2C5;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(41, 46, 73,0.6), rgba(83, 105, 118,0.6), rgba(187, 210, 197,0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: -1;
+}
+#sparkle_para{
+    border-radius: 20px;
+    margin-top: 30px;
+    font-family: 'Righteous', cursive;
+    font-size: 21px;
+    color: black;
+    background: linear-gradient(to right, rgba(41, 46, 73,0.3), rgba(83, 105, 118,0.3), rgba(187, 210, 197,0.3));
+}
+
+#ourser_head{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color: #fdfeff;
+    font-family: 'Jura', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+.section-2{
+    background-image: url(../Gypsum/img/background_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 113vh;
+    position: relative;
+    width: 100%;
+    border: 6px ridge rgb(82, 111, 255);
+    top: -30px;
+}
+
+#card_1{
+    height: 400px;
+    width: 300px;
+    margin-left: -13px;
+    border-radius: 3px;
+    transition: 0.8s
+}
+.card{
+    height: 420px;
+    width: 270px;
+    margin: 30px;
+    margin-top: 70px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px black;
+    border: 5px solid white;
+
+}
+.intro{
+    height: 80px;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: linear-gradient(to right, rgba(83, 105, 118,0.7), rgba(187, 210, 197,0.7));
+    box-sizing: border-box;
+    width: 300px;
+    position: absolute;
+    margin-left: -13px;
+    bottom: 0.00px;
+    transition: 0.8s;
+}
+
+#p_card{
+    font-size: 18px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+#h_card{
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+}
+.card :hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 220px;
+    bottom: 1px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    color: #81FFEF;
+}
+.card:hover #p_card{
+    visibility: visible;
+    opacity: 1;
+
+}
+.card:hover #card_1{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.card_serv{
+    margin-left: 90px;
+}
+#card_2{
+    margin-top: 150px;
+}
+#card_4{
+    margin-top: 150px;
+}
+.section-3{
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    background-size: cover;
+    width: 100%;
+    border: 5px ridge white;
+    position: relative;
+    top: -30px;
+}
+#proj_head{
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.w3-third img{
+    border: 5px solid white;
+}
+.w3-row{
+    width: 100%;
+    margin-top: 20px;
+}
+.w3-third{float:left;width:100%}
+@media (min-width:601px){.w3-third{width:33.33333%}
+.w3-col.m5{width:41.66666%}.w3-col.m6,.w3-half{width:49.99999%}.w3-col.m7{width:58.33333%}.w3-col.m8,.w3-twothird{width:66.66666%}
+.w3-col.m9,.w3-threequarter{width:74.99999%}.w3-col.m10{width:83.33333%}.w3-col.m11{width:91.66666%}.w3-col.m12{width:99.99999%}}
+
+.section-4{
+    background-image: url(../Gypsum/img/background_5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    top: -30px;
+    
+}
+.social{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    height: inherit;
+    width: 100%;
+    bottom: 160px;
+    
+}
+
+.fa{
+    margin: 6px;
+    color: #ffb428;
+    font-size:24px!important;
+    
+}
+.w3-hover-opacity:hover{
+    color: black;
+    opacity:0.60
+}
+.w3-light-grey{
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
+.w3-padding-64{
+    padding-top:40px!important;
+    padding-bottom:40px!important
+}
+.w3-opacity{
+    opacity:0.90
+}
+.contact .fa{
+    display: block;
+    font-size: 30px!important;
+    color: #000;
+    padding: 10px;
+}
+
+#contact-head{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Lemon', cursive;
+}
+
+
+.contact-text{
+    font-size: 18px;
+    margin-left: 10px;
+    font-family:'Fraunces', serif;
+}
+.contact-main{
+    position: relative;
+    height: inherit;
+    border: 8px solid red;
+
+}
+.contact{
+    margin-top: 40px;
+    border: 2px solid white;
+}
+.marker{
+    margin-left: 50px;
+}
+.phone{
+    margin-left: 40px;
+}
+.form-single{
+    margin: 10px;
+}
+#message{
+    padding: 30px;
+}
+
+#get-in-touch{
+    font-family: 'Monofett', cursive;
+    color: #000000;
+    margin-left: 150px;
+}
+.form-main{
+    border: 2px solid orange;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+
+.btn.hover-border-7::before,
+.btn.hover-border-7::after {
+  bottom: 0;
+  transition: width 0.2s 0.35s ease-out;
+}
+.btn.hover-border-7::before {
+  right: 50%;
+}
+.btn.hover-border-7::after {
+  left: 50%;
+}
+.btn.hover-border-7:hover::before,
+.btn.hover-border-7:hover::after {
+  width: 50%;
+  transition: width 0.2s ease-in;   
+}
+
+.btn.hover-border-7 span::before,
+.btn.hover-border-7 span::after {
+  width: 0%; height: 0%;
+  background: transparent;
+  opacity: 0;
+  z-index: 2;
+  transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s 0.35s;
+}
+.btn.hover-border-7 span::before {
+  bottom: 0; left: 0;
+  border-left: 2px solid rgb(54, 56, 55);
+  border-top: 2px solid rgb(54, 56, 55);
+}
+.btn.hover-border-7 span::after {
+  bottom: 0; right: 0;
+  border-right: 2px solid rgb(54, 56, 55);
+  border-top: 2px solid rgb(54, 56, 55);
+}
+.btn.hover-border-7 span:hover::before,
+.btn.hover-border-7 span:hover::after {
+  width: 50%; height: 96%;
+  opacity: 1;
+  transition: height 0.2s 0.2s ease-in, width 0.2s 0.4s linear, opacity 0s 0.2s;   
+}
+ 
